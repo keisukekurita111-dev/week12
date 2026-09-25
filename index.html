@@ -1,0 +1,66 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ポートフォリオ</title>
+<link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+<!-- ヘッダー -->
+<header class="bg-indigo-600 text-white text-center py-10">
+    <h1 class="text-3xl font-bold">栗田桂佑</h1>
+    <p class="mt-2">Webサイト制作を勉強中です</p>
+</header>
+
+<!-- 自己紹介 -->
+<section class="max-w-xl mx-auto px-6 py-10">
+    <h2 class="text-xl font-bold mb-4">自己紹介</h2>
+    <p class="bg-white rounded-lg p-4 shadow transition-all duration-300 hover:-translate-y-1">
+        はじめまして、栗田桂佑です。HTMLやCSS、Tailwind CSSを使ったWeb制作を学んでいます。
+        少しずつ新しい技術を身につけて、自分のサイトを作れるようになりたいです。
+    </p>
+</section>
+
+<!-- スキルリスト -->
+<section class="max-w-xl mx-auto px-6 py-10">
+    <h2 class="text-xl font-bold mb-4">スキル</h2>
+    <ul class="grid grid-cols-2 gap-3">
+        <li class="bg-white rounded-lg p-3 text-center shadow transition-all duration-300 hover:scale-105">HTML</li>
+        <li class="bg-white rounded-lg p-3 text-center shadow transition-all duration-300 hover:scale-105">CSS</li>
+        <li class="bg-white rounded-lg p-3 text-center shadow transition-all duration-300 hover:scale-105">Tailwind CSS</li>
+        <li class="bg-white rounded-lg p-3 text-center shadow transition-all duration-300 hover:scale-105">Splide.js</li>
+    </ul>
+</section>
+
+<!-- 作品スライダー -->
+<section class="max-w-xl mx-auto px-6 py-10">
+    <h2 class="text-xl font-bold mb-4">作品</h2>
+    <div class="splide">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide">
+                    <img src="https://placehold.co/500x300?text=Work1" alt="作品1" class="rounded-lg">
+                </li>
+                <li class="splide__slide">
+                    <img src="https://placehold.co/500x300?text=Work2" alt="作品2" class="rounded-lg">
+                </li>
+                <li class="splide__slide">
+                    <img src="https://placehold.co/500x300?text=Work3" alt="作品3" class="rounded-lg">
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- フッター -->
+<footer class="text-center py-6 text-sm text-gray-500 border-t mt-10">
+    &copy; 2026 Keisuke Kurita
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+<script>
+    new Splide('.splide').mount();
+</script>
+</body>
+</html>
